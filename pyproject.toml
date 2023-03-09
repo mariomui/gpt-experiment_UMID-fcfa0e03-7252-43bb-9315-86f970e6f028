@@ -17,6 +17,7 @@ start = "gpt_experiment:main"
 mypy = "^1.1.1"
 darker = "^1.7.0"
 pylint = "^2.17.0"
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
