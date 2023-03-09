@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "gpt_experiment", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9.4"
 
 [tool.poetry.scripts]
 start = "src.gpt_experiment:main"
@@ -22,3 +22,24 @@ autopep8 = "^2.0.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
+known_third_party = ["pytest"]
+
+[tool.darker]
+src = ["src/"]
+revision = "origin/master..."
+diff = true
+check = true
+isort = true
+lint = ["flake8"]
+log_level = "INFO"
+line_length = 100
+verbose = true

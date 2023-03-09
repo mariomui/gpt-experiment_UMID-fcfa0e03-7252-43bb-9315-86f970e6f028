@@ -3,4 +3,7 @@
 
 def main():
     """some function"""
-    print("mario")
+print("mario")
+
+
+a = [1, 2, 3]
