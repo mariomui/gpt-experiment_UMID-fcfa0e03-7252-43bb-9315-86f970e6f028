@@ -22,3 +22,10 @@ flake8 = "^6.0.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.darker]
+line-length = 80                  # Passed to isort and Black, override their config
+lint = [
+    "pylint",
+]
+# flake8 doesnt get passed args here.

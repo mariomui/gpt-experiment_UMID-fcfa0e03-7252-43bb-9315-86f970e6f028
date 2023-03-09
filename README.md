@@ -14,6 +14,9 @@
 
 **LEGEND** ❯ <-- MarioKart SpeedBump symbol signifies a terminal command.
 
+* `❯ brew install git-lfs`
+* `git lfs install`
+
 There are **TWO** major requirements before proceeding.
 One is **pyenv**, which is my preferred python environment manager, which helps migration and switching to newer versions of python. The other is **poetry** which is a package manager to increase the developer experience, provide basic scripting access, and package organization. There installation guides can be found on their `github`. I, myself install pyenv via brew, and with poetry, I use pip (it is recommended on their site to keep the poetry dependency in a pyenv virtualenv, and allow the poetry virtualenv to handle/house the dependencies )
 
@@ -107,6 +110,7 @@ By now your **`virtualenvs`** should be set up, and you are ready for onboarding
 Now that the `virtualenvs` are ready, the dependencies are all installed, development should be straight forward.
 
 `❯ poetry run start` is the rudimentary start script.
+`> poetry run python ./src/gpt_experiment/[PYTHON_FILENAME.PY]`
 
 ### :: Other Useful Gotchas
 
