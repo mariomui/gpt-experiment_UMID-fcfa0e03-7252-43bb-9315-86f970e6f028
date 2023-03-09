@@ -1,7 +1,7 @@
 """Module providingFunction printing python version."""
+__verision__ = 1.0
+
+from gpt_experiment.main import create_some_shared_utility
 
 
-def main():
-    """some function"""
-print("mario")
-a = [1, 2, 3]
+shared_utility = create_some_shared_utility()
