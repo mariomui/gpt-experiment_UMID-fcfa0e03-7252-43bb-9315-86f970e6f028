@@ -8,14 +8,15 @@ packages = [{include = "gpt_experiment", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9.4"
-darker = "^1.7.0"
-pylint = "^2.17.0"
+
 
 [tool.poetry.scripts]
 start = "gpt_experiment:main"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.1.1"
+darker = "^1.7.0"
+pylint = "^2.17.0"
 
 [build-system]
 requires = ["poetry-core"]
